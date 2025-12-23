@@ -1,508 +1,70 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Private Community</title>
-    <meta name="description" content="Private Community">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="immagini/favicon-private-community.png">
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/odometer.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script type="text/javascript">
-	var _iub = _iub || [];
-	_iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"countryDetection":true,"enableFadp":true,"enableLgpd":true,"enableUspr":true,"floatingPreferencesButtonDisplay":"bottom-left","lgpdAppliesGlobally":false,"perPurposeConsent":true,"siteId":3683960,"whitelabel":false,"cookiePolicyId":42326033,"lang":"it", "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#0073CE","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","closeButtonRejects":true,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":"privatecommunity.net","position":"float-top-center","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#0073CE","rejectButtonDisplay":true,"showTitle":false,"showTotalNumberOfProviders":true,"textColor":"#000000" }};
+	<title>Michele Zanni</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css?v=8">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script>
+		function decryptEmail() {
+			var user = "michele";
+			var domain = "zannimichele.com";
+			return user + '@' + domain;
+		}
+		
+		document.addEventListener('DOMContentLoaded', function() {
+		var email = decryptEmail();
+			document.querySelectorAll('.email-link').forEach(function(link) {
+				link.innerHTML = email;
+				link.href = 'mailto:' + email;
+			});
+		});
 	</script>
-	<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3683960.js"></script>
-	<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stable/stub.js"></script>
-	<script type="text/javascript" src="//cdn.iubenda.com/cs/stable/iubenda_cs.js" charset="UTF-8" async></script>
 </head>
-<body>
-    <!--Preloader-->
-    <div id="preloader">
-        <div id="loader" class="loader">
-            <div class="loader-container">
-                <div class="loader-icon"><img src="immagini/favicon-private-community.png" alt="Preloader"></div>
-            </div>
-        </div>
-    </div>
-    <!--Preloader-end -->
-    <!-- Scroll-top -->
-    <button class="scroll__top scroll-to-target" data-target="html">
-        <i class="fas fa-angle-up"></i>
-    </button>
-    <!-- Scroll-top-end-->
-    <!-- header-area -->
-    <div id="header-fixed-height"></div>
-    <!-- Header placeholder -->
-    <div id="header-placeholder"></div>
 
-    <script>
-    fetch('it/header-home.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      })
-      .catch(err => console.error('Errore caricando header:', err));
-    </script>
-    <!-- header-area-end -->
-    <!-- main-area -->
-    <main class="fix">
-        <!-- slider-area -->
-        <section class="slider__area">
-            <div class="swiper-container slider__active">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slider__single">
-                        <div class="slider__bg" data-background="immagini/Private-community-photo_12.jpg"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="slider__content">
-                                        <h2 class="title">VISION & MISSION DRIVEN &reg;</h2>
-                                        <h2 class="title" style="font-size: 2em;">AI POWERED COMMUNITIES</h2>
-                                        <div style="color: #FFF;">Imprenditori e professionisti possono e devono <br>
-agire per generare prosperità e ammirazione: <br>
-lo devono a se stessi e alla comunità locale <br>
-che a loro dovrebbe ispirarsi <br>
-e da loro dovrebbe trarre ricchezza ed opportunità</div>
-                                        <!--<a class='btn' href='#'>CONSULENZA GRATUITA</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--
-                        <div class="slider__shape">
-                            <img src="assets/img/slider/slider_shape01.png" alt="">
-                            <img src="assets/img/slider/slider_shape02.png" alt="">
-                        </div>-->
-                    </div><!--
-                    <div class="swiper-slide slider__single">
-                        <div class="slider__bg" data-background="immagini/Private-community-200.jpg"></div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="slider__content">
-                                        <span class="sub-title">We Are Expert In This Field</span>
-                                        <h2 class="title">Transforming Dreams into Financial Reality</h2>
-                                        <p>Apexa helps you to convert your data into a strategic asset and get business insights Apexa helps you to convert.</p>
-                                        <a class='btn' href='contact.html'>Free Consulting</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider__shape">
-                            <img src="assets/img/slider/slider_shape01.png" alt="">
-                            <img src="assets/img/slider/slider_shape02.png" alt="">
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </section>
-        <!-- slider-area-end -->
-        <!-- features-area -->
-        <section class="features__area">
-            <div class="container-fluid p-0">
-                <div class="features__item-wrap">
-                    <div class="row g-0">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <i class="flaticon-financial-profit"></i>
-                                </div>
-                                <div class="features__content">
-                                    <h4 class="title"><a href='it/oltre-ordinario-la-forza-del-pensiero-strategico.html'>Pensiero Strategico</a></h4>
-                                    <p>Nella routine quotidiana tutti siamo estremamente impegnati. Ma cosa di ciò che facciamo “fa la differenza”?</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <i class="flaticon-light-bulb"></i>
-                                </div>
-                                <div class="features__content">
-                                    <h4 class="title"><a href='it/private-community-un-organizzazione-orientata-al-futuro.html#combine'>Verso il Nuovo Mondo</a></h4>
-                                    <p>Tutti parlano di Intelligenza Artificiale, spesso con grande preoccupazione. Come possiamo usarla per davvero?</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <i class="flaticon-target"></i>
-                                </div>
-                                <div class="features__content">
-                                    <h4 class="title"><a href='it/la-formula-elevate-to-admiration.html'>Leadership Attrattiva</a></h4>
-                                    <p>Come possiamo essere al contempo leader autentici e attrarre le persone nei nostri progetti? </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="features__item">
-                                <div class="features__icon">
-                                    <i class="flaticon-profit"></i>
-                                </div>
-                                <div class="features__content">
-                                    <h4 class="title"><a href='it/private-community-un-organizzazione-orientata-al-futuro.html'>Senso di Community</a></h4>
-                                    <p>Quanto valore avremmo se potessimo ricevere suggerimenti e opportunità in modo semplice ed efficace? </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- features-area-end -->
-        <!-- about-area -->
-        <section class="about__area-two about__bg" style="padding: 120px 0 0 0" >
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-8">
-                        <div class="">
-                           <div class="tilted-border"><div class="tilted-border2"><img src="immagini/Private-community-photo_2.jpg" alt="" ></div></div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about__content-two">
-                            <div class="section-title mb-20 tg-heading-subheading animation-style3">
-                                <span class="sub-title">Private Community&reg; - Elevate to Admiration&reg;</span>
-                                <h2 class="title tg-element-title">COS’È PRIVATE COMMUNITY&reg;</h2>
-                            </div>
-                            <p>Private Community&reg; è l’unica organizzazione per lo <strong>sviluppo imprenditoriale</strong> in grado di rendere disponibili cultura e strumenti avanzati per realizzare grandi Vision ottenendo successo e ammirazione.</p>
+<body class="bg">
 
-                            <div class="about__content-inner">
-                                <div class="about__list-box">
-                                    <p><strong>Private Community&reg; affianca quattro elementi fondanti:</strong></p>
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-arrow-button"></i>la <strong style="display: contents;">cultura business</strong> nata nella Silicon Valley centrata sull’approccio Vision & Mission Driven&reg;</li>
-                                        <li><i class="flaticon-arrow-button"></i>lo <strong style="display: contents;">stile relazionale</strong> Europeo che vede la persona al centro di un sistema di relazioni per la vita</li>
-                                        <li><i class="flaticon-arrow-button"></i>la più avanzata piattaforma di <strong style="display: contents;">Intelligenza Artificiale</strong> orientata ai processi business attualmente disponibile</li>
-                                        <li><i class="flaticon-arrow-button"></i>
-la Formula <strong style="display: contents;">Elevate to Admiration&reg;</strong>: solido metodo di lavoro che accompagna negli anni l'imprenditore a realizzare la propria Vision.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center" style="margin: 60px 0px 0 0; padding-bottom: 650px; background:url(immagini/bg-logo-private-community.jpg) bottom no-repeat;">
-                    <div class="col-lg-12 col-md-12"> 
-                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                        <h2 style="font-size: 26px;" class="title tg-element-title">Tutto questo è tradotto con orgoglio nella Mission di Private Community&reg;</h2></div>
-<p style="font-size:22px; text-align: center;">Guidati dalla<br>
-Formula Elevate to Admiration&reg;<br>
-che permette di acquisire una<br>
-mentalità relazionale orientata al successo,<br>
-organizziamo il territorio in una rete di Community interconnesse<br>
-che soddisfano le umane necessità<br>
-di appartenere,<br>
-di “essere visti”,<br>
-di crescere,<br>
-di mettere il proprio talento al servizio della comunità,<br>
-di sentirsi importanti per gli altri...<br>
-con il coraggio e la voglia di creare insieme<br>
-qualcosa per cui essere ammirati!</p>
+<section id="sec1"> 
+	  <article style="text-align: center;">
+		
+		  	<img class="logo" src="img/logo-zanni.png" >
+     </article>
 
-                     </div>
-            </div>
+	  <article class="loghi-cert" style="text-align: center; margin-top: 30px;">
 
-        </section>
-        <!-- about-area-end -->
-        <!-- counter-area -->
-        <section class="counter-area-two" style="background-color: #F3F2EE;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="counter-item">
-                            <div class="icon">
-                                <i class="flaticon-pin"></i>
-                            </div>
-                            <div class="content">
-                                <h2 class="count"><span class="odometer" data-count="3"></span></h2>
-                                <p>Sedi Nazionali</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="counter-item">
-                            <div class="icon">
-                                <i class="flaticon-finance"></i>
-                            </div>
-                            <div class="content">
-                                <h2 class="count"><span class="odometer" data-count="7"></span></h2>
-                                <p>Trademarks</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="counter-item">
-                            <div class="icon">
-                                <i class="flaticon-handshake"></i>
-                            </div>
-                            <div class="content">
-                                <h2 class="count"><span class="odometer" data-count="10"></span></h2>
-                                <p>Promesse del Brand</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="counter-item">
-                            <div class="icon">
-                                <i class="flaticon-startup"></i>
-                            </div>
-                            <div class="content">
-                                <h2 class="count"><span class="odometer" data-count="100"></span>%</h2>
-                                <p>Franchising Italiano</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="counter-shape-two">
-                <img src="immagini/favicon-private-community-bn-small.png" width="150px" alt="" class="rotateme">
-            </div>
-        </section>
-        <!-- counter-area-end -->
+		  	<a href="https://assium.it/" target="_blank"><img class="cert1" src="img/certificato-02.png"></a>
+		  	<a href="https://www.accredia.it/" target="_blank"><img class="cert2" src="img/certificato.png"></a>
+	 </article>
+	
 
+        <article style="text-align: center; width: auto;">
+		      <div class="Box">
+			         <h3>CONSULENZE PROFESSIONALI PER AZIENDE</h3>
+                   <ul>
+	                   <li>telefonia fissa, mobile e internet</li>
+	                   <li>forniture energia elettrica e gas</li>
+	                   <li>efficientamento energetico e impianti fotovoltaici</li>
+                  </ul>
+		     </div>
+      </article>
+</section>
 
-        <!-- about-area -->
-        <section class="about__area-two about__bg" style="padding: 120px 0 0 0" >
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    
-                    <div class="col-lg-6">
-                        <div class="about__content-two">
-                            <div class="section-title mb-20 tg-heading-subheading animation-style3">
-                                <span class="sub-title">Private Community&reg; - Elevate to Admiration&reg;</span>
-                                <h2 class="title tg-element-title" style="color:#C95141">PRIVATE COMMUNITY&reg;: UN’ORGANIZZAZIONE ORIENTATA AL FUTURO</h2>
-                            </div>
-                            <p>Private Community&reg; è l’unica organizzazione per lo <strong>sviluppo imprenditoriale</strong> in grado di rendere disponibili cultura e strumenti avanzati per realizzare grandi Vision ottenendo successo e ammirazione.</p>
+		<!--<div id="divContatti" style="margin: auto; text-align: center;  margin-top: 20px; max-width: 30%; min-width:75%; ">
+			<p style="font-size: 14pt; color: white;">Per informazioni:</p>
+		 	<i class="fa fa-envelope" style="font-size:17px; color: white;"> <span id="email"></span></i><br/>
+		 </div>-->
+		  
+	
+	<footer id="globale">
+	  <p>Michele Zanni &copy; &bull; Via Umberto I, 5 12030 POLONGHERA (CN) - P.IVA 03775090040 - C.F. ZNNMHL60M30L219P &bull; <i class="fa fa-phone" style="font-size:14pt; color: white;"> <a href="tel:+393456983322">+39 345 69 83 322</a></i> &bull;  <i class="fa fa-envelope" style="font-size:14pt; color: white;"> <a class="email-link" style="color: white; text-decoration: none;"></a></i></p>
+	</footer>
+	<footer id="mobile">
+	  <p>Michele Zanni &copy; &bull; Via Umberto I, 5<br/>12030 POLONGHERA (CN)<br/>P.IVA 03775090040<br/>C.F. ZNNMHL60M30L219P <br/><i class="fa fa-phone" style="font-size:14pt; color: white;"> <a href="tel:+393456983322">+39 345 69 83 322</a></i><br/><i class="fa fa-envelope" style="font-size:14pt; color: white;"> <a class="email-link" style="color: white; text-decoration: none;"></a></i></p>
+	</footer>
 
-                            <div class="about__content-inner">
-                                <div class="about__list-box">
-                                    <ol class="list-num-wrap" start="1">
-                                        <li><strong style="display: contents;">Innovazione Guidata</strong>: queste community imprenditoriali permettono di condividere idee e strategie innovative, promuovendo un ambiente di crescita collettiva e di collaborazione</li>
-                                        <li><strong style="display: contents;">Supporto dell’IA</strong>: la più avanzata piattaforma di intelligenza artificiale specializzata sui processi di business supporta professionisti e imprenditori nell'implementazione di processi di grande impatto e alto valore economico (per i quali si renderebbero necessari grandi investimenti in ricerca e sviluppo, consulenza ed esecuzione)</li>
-                                        <li><strong style="display: contents;">Impatto Sociale e Aziendale</strong>: queste community stimolano lo sviluppo di soluzioni che hanno un impatto positivo sia a livello sociale che aziendale, promuovendo un modello di business sostenibile e responsabile</li>
-                                        <li><strong style="display: contents;">Leadership Visionaria</strong>: concentrarsi sulla formazione di leader guidati da vision e mission è essenziale per guidare il cambiamento positivo e affrontare le sfide del futuro</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="">
-                           <div class="tilted-border"><div class="tilted-border-red"><img src="immagini/Private-community-photo_22.jpg" alt="" ></div></div>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                    <div class="row align-items-center justify-content-center" style="margin:20px 0 80px 0;">
-                     <div class="col-lg-6 col-md-6">
-                        <div class="">
-                           <div class="tilted-border"><div class="tilted-border-red"><img src="immagini/Private-community-300.jpg" alt="" ></div></div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about__content-two">
-                            
-
-                            <div class="about__content-inner">
-                                <div class="about__list-box">
-                                    <ol class="list-num-wrap" start="5">
-                                        <li><strong style="display: contents;">Adattabilità e Resilienza</strong>: l’accento sulla collaborazione e l’innovazione aiuta a costruire un ecosistema imprenditoriale più adattabile e resiliente, capace di rispondere meglio alle crisi e ai cambiamenti del mercato</li>
-                                        <li><strong style="display: contents;">Networking e Opportunità di Crescita</strong>: la creazione di una rete di professionisti e imprenditori offre opportunità di apprendimento reciproco e potenziali collaborazioni o partnership</li>
-                                        <li><strong style="display: contents;">Sviluppo delle Competenze del Futuro</strong>: queste community possono fungere da piattaforme per lo sviluppo e la condivisione di competenze essenziali per il futuro, come il pensiero strategico, la risoluzione di problemi complessi e la leadership attrattiva</li>
-                                        <li>
-<strong style="display: contents;">Elevazione e Riconoscimento</strong>: essere parte di una community che realizza “cose meravigliose” non solo eleva il profilo dei suoi membri, ma può anche portare ad un riconoscimento più ampio delle loro imprese e innovazioni</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-
-
-            </div>
-
-        </section>
-        <!-- about-area-end -->
-
-        <!-- project-area -->
-        <section class="project__area-two" id="membri">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="section-title mb-50 tg-heading-subheading animation-style3">
-                            <h2 class="title tg-element-title">I MEMBRI PRIVATE COMMUNITY&reg; RACCONTANO...</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gutter-24">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <img src="immagini/antonio-dell-aversana.jpg" alt="">
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href='it/membri-antonio-dell-versana.html'>Antonio Dell’Aversana</a></h2>
-                                <span>Studio Legale Dell'Aversana</span>
-                                <div class="link-arrow link-arrow-two">
-                                    <a href='it/membri-antonio-dell-versana.html'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <img src="immagini/claudio-gastaldi.jpg" alt="">
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href='it/membri-claudio-gastaldi.html'>Claudio Gastaldi</a></h2>
-                                <span>Global Service Srl</span>
-                                <div class="link-arrow link-arrow-two">
-                                    <a href='it/membri-claudio-gastaldi.html'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <img src="immagini/marco-montersino.jpg" alt="">
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href='it/membri-marco-montersino.html'>Marco Montersino</a></h2>
-                                <span>Global Service Srl</span>
-                                <div class="link-arrow link-arrow-two">
-                                    <a href='it/membri-marco-montersino.html'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <img src="immagini/rossella-pucciariello.jpg" alt="">
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href='it/membri-rossella-pucciariello.html'>Rossella Pucciariello</a></h2>
-                                <span>ProEvo Piemonte Srl</span>
-                                <div class="link-arrow link-arrow-two">
-                                    <a href='it/membri-rossella-pucciariello.html'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <img src="immagini/alessandro-preve.jpg" alt="">
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href='it/membri-alessandro-preve.html'>Alessandro Preve</a></h2>
-                                <span>Architetto</span>
-                                <div class="link-arrow link-arrow-two">
-                                    <a href='it/membri-alessandro-preve.html'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="project__item-two">
-                            <div class="project__thumb-two">
-                                <img src="immagini/paolo-marchegiani.jpg" alt="">
-                            </div>
-                            <div class="project__content-two">
-                                <h2 class="title"><a href='it/membri-paolo-marchegiani.html'>Paolo Marchegiani</a></h2>
-                                <span>Elettro 2000 TLC Srl</span>
-                                <div class="link-arrow link-arrow-two">
-                                    <a href='it/membri-paolo-marchegiani.html'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6293 3.27956C17.7117 2.80339 17.4427 2.34761 17.0096 2.17811C16.9477 2.15384 16.8824 2.13551 16.8144 2.12375L6.96087 0.419136C6.4166 0.325033 5.89918 0.689841 5.80497 1.23409C5.71085 1.77828 6.0757 2.29576 6.61988 2.38991L14.0947 3.68293L1.3658 12.6573C0.914426 12.9756 0.806485 13.5994 1.12473 14.0508C1.44298 14.5022 2.06688 14.6101 2.51825 14.2919L15.2471 5.31752L13.954 12.7923C13.8599 13.3365 14.2248 13.854 14.7689 13.9481C15.3132 14.0422 15.8306 13.6774 15.9248 13.1332L17.6293 3.27956Z" fill="currentcolor" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project__shape-wrap-two">
-                <img src="assets/img/project/h2_project_shape.png" alt="" data-aos="fade-left" data-aos-delay="400">
-            </div>
-        </section>
-        <!-- project-area-end -->
-       
-    </main>
-    <!-- main-area-end -->
-    <!-- footer-area -->
-    <!-- Footer placeholder (opzionale) -->
-    <div id="footer-placeholder"></div>
-    <script>
-    fetch('it/footer-home.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-    </script>
-    <!-- footer-area-end -->
-    <!-- JS here -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.odometer.min.js"></script>
-    <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/js/gsap.js"></script>
-    <script src="assets/js/ScrollTrigger.js"></script>
-    <script src="assets/js/SplitText.js"></script>
-    <script src="assets/js/gsap-animation.js"></script>
-    <script src="assets/js/jquery.parallaxScroll.min.js"></script>
-    <script src="assets/js/swiper-bundle.js"></script>
-    <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
