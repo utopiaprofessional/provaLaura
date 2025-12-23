@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* poi il resto del tuo CSS */
+body {
+    font-family: "Poppins", "Hoefler Text", "Liberation Serif", "Times New Roman", Times, serif;
+}
+@media all and (max-width: 480px){
+.bg, .bg-blu {
+	padding:0px !important;
+	background: url("../img/imm-sfondo-01.jpg") no-repeat left center fixed !important;	
+}
+#sec1, #sec1-blu {
+	max-width: 100% !important;
+	display: block !important;
+}
+.loghi-cert img{
+	max-width:22% !important;
+}
+
+.loghi-cert img.cert2{
+	max-width:18% !important;
+}
+article .Box {
+	 margin-top: 0px;
+}
+.Box h3 {
+	font-size: 23px;
+	text-align: left;
+}
+ul{
+  font-size: 13.5pt !important;
+  margin-left: 20px !important;
+}
+footer#globale {
+	display: none;
+}
+footer#mobile {
+	display: block !important;
+}
+}
+.bg{
+	background: url("../img/imm-sfondo-01.jpg") no-repeat center center fixed;
+	position: relative;
+    margin: 0 auto;
+    background-size: cover !important;
+    padding: 0 10%;
+    height: 100vh;
+	backdrop-filter: brightness(60%);
+}
+.bg-blu{
+	background: url("../img/imm-sfondo-01.jpg") no-repeat center center fixed;
+	position: relative;
+	margin: 0 auto;
+	background-size: cover !important;
+	padding: 5% 10%;
+}
+
+footer{
+  width:100%;
+  height:auto; 
+  position:fixed;
+  bottom:0;
+  left:0;
+  background-color:rgb(0, 0, 0, 0.7);
+  padding: 18px 30px 10px 30px;
+  text-align: center;
+  font-size: 13pt;
+  font-family: "Poppins", "Hoefler Text", "Liberation Serif", "Times New Roman", Times, serif;
+}
+footer#mobile {
+	display: none;
+}
+
+.loghi-cert img.cert2{
+	margin-left: 20px;
+}
+
+.loghi-cert img{
+	max-width:100%;
+	height:auto;
+	background-color: #eee;
+    border-radius: 100%;
+    padding: 3px;
+	
+}
+
+
+article .Box {
+	 margin-top: 30px;
+}
+
+#sec1{
+	padding: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 70%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    display: flex;
+    height: 100%;
+	
+}
+#sec1-blu{
+	padding: 30px;
+	background-color:rgb(0, 0, 0, 0.3);
+	border-radius: 20px;
+	margin: 6% auto;
+	max-width: 70%;
+	/*background-color:rgb(255, 255, 255, 0.8);
+	border-radius: 20px;*/
+	
+}
+h1 {
+	color: white;
+  font-size: 30pt;
+	font-family: "Poppins", "Hoefler Text", "Liberation Serif", "Times New Roman", Times, serif;
+}
+p {
+	font-family: "Poppins", "Hoefler Text", "Liberation Serif", "Times New Roman", Times, serif;
+	color: white;
+}
+
+img.logo {
+	max-width:100%; 
+	height:auto;
+}
+
+#divContatti{
+	/*background-color: rgb(0, 0, 0, 0.3);
+	border-radius: 20px;*/
+	padding: 10px;
+}
+
+#divScritta{
+	font-family: "Poppins", "Hoefler Text", "Liberation Serif", "Times New Roman", Times, serif;
+	color: white;
+
+}
+
+a{
+	font-family: "Poppins", "Hoefler Text", "Liberation Serif", "Times New Roman", Times, serif;
+	color: white;
+}
+a:hover{
+	color: #E0E0E0;
+}
+
+h3{
+	color:white;
+	font-size: 35px;
+}
+ul{
+  /*list-style-position: inside; */
+  padding-left: 0;             
+  margin: 0 auto;              
+  text-align: left;            
+  display: inline-block;       
+  color: white;
+  font-size: 15pt;
+}
